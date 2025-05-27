@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Docker
+.dockerignore # Often explicitly included, but if you have a separate one, add it.
+
+# Logs
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
