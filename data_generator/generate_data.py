@@ -23,8 +23,7 @@ def generate_process_data(num_points, params, anomaly_freq, time_interval):
 
     for i in range(num_points):
         current_time = start_time + timedelta(seconds=i * time_interval)
-        row = {"timestamp": current_time}
-
+        row = {"timestamp": current_time.isoformat(timespec='milliseconds') + 'Z'} 
         for param_name, config in params.items():
             mean = config["mean"]
             std = config["std"]
